@@ -11,7 +11,7 @@ script:
 
 after_success:
   - docker build -t djone/multi-client ./client
-  - docker build -t djone/multi-nginex ./nginx
+  - docker build -t djone/multi-nginx ./nginx
   - docker build -t djone/multi-server ./server
   - docker build -t djone/multi-worker ./worker
   # Log in to docker CLI
